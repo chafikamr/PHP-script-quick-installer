@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    margin: 0;
+    background-color: #F7F7F7;
+}
+
+
+/** PAGE 1 **/
+
+.wrapper {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper>* {
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper>a {
+    width: fit-content;
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #1C85CB;
+    color: white;
+    box-shadow: 0px 5px 0px #0d77ae;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0d77ae;
+    font-size: 15px;
+}
+
+
+/** PAGE TWO **/
+
+.lang {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid gainsboro;
+}
+
+.lang h1 {
+    font-size: 16px;
+    width: fit-content;
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: #888;
+}
+
+input[type=radio] {
+    appearance: none;
+}
+
+input[type=radio]:checked+label::before {
+    background-color: #1C85CB;
+}
+
+.lang>div {
+    margin-top: 10px;
+    text-align: initial;
+    padding: 0 20px;
+}
+
+.lang label {
+    position: relative;
+    cursor: pointer;
+}
+
+.lang label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888;
+    position: absolute;
+    left: -26px;
+    bottom: 4px;
+}
+
+.lang>div.button {
+    display: flex;
+    justify-content: end;
+}
+
+.lang>div.button button {
+    padding: 10px 30px;
+    background-color: #0d77ae;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/** PAGE THREE **/
+
+form.info {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    text-align: initial;
+}
+
+form.info>div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form.info>div div:first-of-type {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+form.info>div div:last-of-type {
+    width: 49%;
+}
+
+form.info>div p {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+form.info input[type=text] {
+    padding: 7px 15px;
+    width: 90%;
+    border: 1px solid #888;
+    outline: 0;
+}
+
+.info>div.button {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+}
+
+.info>div.button button {
+    padding: 10px 30px;
+    background-color: #0d77ae;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.info h1 {
+    font-size: 16px;
+    width: fit-content;
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: #888;
+}
+
+.inner_wrapper {
+    width: 500px;
+}
+
+.inner_wrapper .message {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFE2E2;
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+
+/** PAGE FOUR **/
+
+.inner_wrapper .warning {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFF2E2;
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+form.login {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    text-align: initial;
+}
+
+form.login>div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form.login>div div:first-of-type {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+form.login>div p {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+form.login input[type=text] {
+    padding: 7px 15px;
+    width: 90%;
+    border: 1px solid #888;
+    outline: 0;
+}
+
+.login>div.button {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+}
+
+.login>div.button button {
+    padding: 10px 30px;
+    background-color: #0d77ae;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login h1 {
+    font-size: 16px;
+    width: fit-content;
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: #888;
+}
+
+
+/** FIVE PAGE **/
+
+.inner_wrapper .sucess {
+    background-color: #E2FFED;
+}
+
+.inner_wrapper i {
+    margin: 20px;
+}
+
+.redirect a {
+    display: block;
+    width: fit-content;
+    color: white;
+    background-color: #0d77ae;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 30px;
+}
